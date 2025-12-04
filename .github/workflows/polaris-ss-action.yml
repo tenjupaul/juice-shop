@@ -21,6 +21,7 @@ jobs:
         polaris_assessment_types: SAST
         polaris_application_name: tenjupaul-${{ github.event.repository.name }}
         polaris_prComment_enabled: true
+        polaris_prComment_severities: critical,high,medium
         polaris_reports_sarif_create: true
         polaris_upload_sarif_report: true
         github_token: ${{ secrets.GITHUB_TOKEN }}
